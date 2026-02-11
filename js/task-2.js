@@ -1,5 +1,6 @@
 class  Storage  {
-    #items
+    #items;
+
     constructor(initialItem) {
         this.#items = initialItem;
 }
@@ -10,6 +11,7 @@ class  Storage  {
     addItem(newItem) {
         this.#items.push(newItem);
     }
+
     removeItem(itemToRemove) {
         const itemIndex = this.#items.indexOf(itemToRemove);
         if (itemIndex !== -1) {
